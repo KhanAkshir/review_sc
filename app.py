@@ -71,8 +71,11 @@ def index():
 
 
             client = pymongo.MongoClient("mongodb+srv://Akshir:<password>@cluster0.yinu3eg.mongodb.net/?retryWrites=true&w=majority")
+
             db = client['review_scrap']
-            review_coll=db["review_scrap_data"]
+            review_coll=db['review_scrap_data']
+            review_coll.insert_many(reviews)
+
 
 
 
