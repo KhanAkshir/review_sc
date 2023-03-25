@@ -33,7 +33,7 @@ def index():
             Prodreq=requests.get(product_link)
             product_html=bs(Prodreq.text,'html.parser')
             comment_box=product_html.find_all("div",{"class":"_16PBlm"})
-
+            
   
             reviews=[]
 
@@ -70,7 +70,7 @@ def index():
           
 
 
-            client = pymongo.MongoClient("mongodb+srv://Akshir:<password>@cluster0.yinu3eg.mongodb.net/?retryWrites=true&w=majority")
+            client = pymongo.MongoClient("mongodb+srv://Akshir:Akshirp@cluster0.yinu3eg.mongodb.net/?retryWrites=true&w=majority")
 
             db = client['review_scrap']
             review_coll=db['review_scrap_data']

@@ -8,13 +8,18 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Search</h1>
+    <div class="Akshir">
 
+    <h1 style="text-align: center"><u><b>Search</b></u></h1> <br>
+    <h3>Type the Name and Number of Product for extracting their Customer review from flipkart</h3>
+    </div>
     <div class="form">
         <form action="/review" method="POST">
-            <input type="text" name="content" id="content">
-            <input type="number" name="prodnum" id="prodnum">
-            <input type="submit" value="Search">
+            <label for="fname">Enter the name of product :  </label> <br>
+            <input type="text" name="content" id="content"  class="inp" ><br><br>
+            <label for="fname">Enter the number of product : </label><br> 
+            <input type="number" name="prodnum" id="prodnum" class="inp"><br><br>
+            <input type="submit" class="search" value="Search">
         </form>
     </div>
 </div>
